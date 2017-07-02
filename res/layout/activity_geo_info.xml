@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+ 		android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff4040" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_7345" />
+        <LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/tvLocation"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp"
+	            android:clickable="true"
+	            android:paddingLeft="3dp"
+	            android:paddingRight="3dp"
+	            android:text="Unknown location" />
+	 
+		    <TextView
+		        android:id="@+id/tvcurentlocation"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_margin="5dp"
+		        android:text="Trying to get current location."
+		        android:paddingLeft="3dp"
+		        android:paddingRight="3dp"
+		        android:clickable="true"
+	         />        
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+	        android:id="@+id/tvwhitelistheading"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="5dp"
+	        android:text="Whitelist"
+	        android:textSize="23dp"
+	        android:background="#333333"
+	        android:textColor="#ffffff"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"/>        
+    <ListView
+        android:id="@+id/lvcwhitelist"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

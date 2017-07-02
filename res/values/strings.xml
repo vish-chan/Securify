@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SeQurifi</string>
+    <string name="title_activity_geo_info">Location Information</string>
+    <string name="title_activity_shownetworks">Available Networks</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="options">
+        <item>Configured Wifis</item>
+        <item>Manage Geolocations</item>
+        <item>Help</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_show_configured_networks">Configured Networks</string>
+    <string name="title_activity_malicious_result">MaliciousResultActivity</string>
+
+</resources>

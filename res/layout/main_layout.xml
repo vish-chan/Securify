@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Device Info"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvoriginalmac1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Original MAC: "
+        android:textSize="16dp" />
+
+    <Switch
+        android:id="@+id/switchstartwifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight = "5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Wifi Status" />
+
+    <Switch
+        android:id="@+id/switchstartsecurifiservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "5dp"
+        android:text="Securifi Status" />
+    
+     <Switch
+        android:id="@+id/switchmaliciousap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "5dp"
+        android:text="Malicious AP Detection" />
+    
+     <TextView
+        android:id="@+id/tvmacoptionsheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="MAC Randomization"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <RadioGroup
+         android:id="@+id/rGmacrandomtype"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="20dp" >
+
+         <RadioButton
+             android:id="@+id/ralways"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:text="Always On" />
+
+         <RadioButton
+             android:id="@+id/rgeolocation"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Use Geolocation" />
+
+         <RadioButton
+             android:id="@+id/roff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Always Off" />
+     </RadioGroup>
+
+</LinearLayout>
